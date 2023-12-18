@@ -1,0 +1,103 @@
+h1{
+    text-align: center;
+}
+
+
+/* Table Layout */
+.container{    
+    display: grid;
+    max-width: 90%;
+    margin: 1% auto auto auto;
+    text-align: center;
+    row-gap: 10px;
+    column-gap: 5px;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(9,1fr);    
+}
+.element{
+    border: 2px solid black;
+    padding: 20px;
+    position: relative;
+}
+
+
+#id-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#id-2{
+    grid-column-start: 18;
+    grid-column-end: 19;
+}
+#id-5,#id-13{
+    grid-column-start: 13;        
+}
+#id-58,#id-90{
+    grid-column-start: 4;        
+}
+
+
+/* Filling with Elements */
+.elementId{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;        
+    text-align:right;
+    vertical-align:bottom;    
+}
+.elementName{
+    color: black;
+    text-overflow: ellipsis;
+    overflow: hidden;    
+    position: absolute;
+    top: 20px;
+    right:0;    
+    left: 0;    
+}
+
+
+/* Styling with Colors */
+.am{
+    background-color: green;
+}
+.aem{
+    background-color:darkred;
+}
+
+.rnm{
+    background-color: rgb(53, 98, 182);
+}
+.ptm{
+    background-color: darkslategray;
+}
+.ml{
+    background-color: olive;
+}
+.unp{
+    background-color: slategrey;
+}
+
+.la{
+    background-color: royalblue;
+}
+
+.ac{
+    background-color: saddlebrown;
+}
+.ng{
+    background-color: rosybrown;
+}
+
+.tm{
+    background-color: rgb(61, 13, 232);
+}
+
+
+
+/* Hovering effect */
+.element:hover{
+    transform: scale(3);
+    z-index: 1;
+}
